@@ -17,10 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Note: ${note.title}`,
-    description: "Detailed view of the selected note.",
+    description: note.content,
     openGraph: {
       title: `Note: ${note.title}`,
-      description: "Detailed view of the selected note.",
+      description: note.content,
       url: `https://notehub-public.goit.study/notes/${id}`,
       images: [
         {
